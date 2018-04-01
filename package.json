@@ -1,0 +1,9 @@
+{
+  "name": "@apicase/notify",
+  "version": "0.1.0",
+  "description": "Delightful notifications for Apicase",
+  "main": "index.js",
+  "repository": "https://github.com/apicase/notify",
+  "author": "Anton Kosykh <kelin2025@yandex.ru>",
+  "license": "MIT"
+}
