@@ -1,0 +1,42 @@
+#apicase-notifies {
+  top: 10px;
+  right: 10px;
+  position: fixed;
+}
+
+.apicase-notify {
+  font: 14px/16px Arial, sans-serif;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  animation: apicase-show 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.apicase-notify + .apicase-notify {
+  margin-top: 10px;
+}
+
+.apicase-notify-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.apicase-notify-closing {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@keyframes apicase-show {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
